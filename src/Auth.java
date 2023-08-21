@@ -4,7 +4,7 @@ public class Auth {
     public static final String REGEX = "^[a-zA-Z0-9_]*$";
     public static void main(String[] args) {
         try {
-            checkAuth ("Admin_123", "123_Admin", "321_Admin");
+            checkAuth ("Admin_123", "123_Admin", "123_Admin");
             System.out.println("Успешный вход");
         } catch (WrongLoginException | WrongPasswordException e) {
             System.out.println("Ошибка входа");
